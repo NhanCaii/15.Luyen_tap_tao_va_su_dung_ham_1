@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+
+    function checkStar(s1, s2) {
+        let check=true;
+        let str = prompt("Nhap ten ngoi sao")
+        for (i = 0; i < s1.length; i++) {
+            if (str == s1[i]) {
+                check=false;
+                return s2[i]
+            }
+        }
+        if(check){
+            return "Không tìm thấy ngôi sao"
+        }
+    }
+    alert(checkStar(star1, star2))
+</script>
+</body>
+</html>
